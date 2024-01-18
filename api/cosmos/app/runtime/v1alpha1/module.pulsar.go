@@ -2094,15 +2094,15 @@ type Module struct {
 	// precommiters specifies the module names of the precommiters
 	// to call in the order in which they should be called. If this is left empty
 	// no precommit function will be registered.
-	Precommiters []string `protobuf:"bytes,8,rep,name=precommiters,proto3" json:"precommiters,omitempty"`
+	Precommiters []string `protobuf:"bytes,8,rep,name=precommiters,proto3" json:"precommiters,omitempty"` // TODO investigate future of this
 	// prepare_check_staters specifies the module names of the prepare_check_staters
 	// to call in the order in which they should be called. If this is left empty
 	// no preparecheckstate function will be registered.
-	PrepareCheckStaters []string `protobuf:"bytes,9,rep,name=prepare_check_staters,json=prepareCheckStaters,proto3" json:"prepare_check_staters,omitempty"`
+	PrepareCheckStaters []string `protobuf:"bytes,9,rep,name=prepare_check_staters,json=prepareCheckStaters,proto3" json:"prepare_check_staters,omitempty"` // TODO investigate future of this
 	// pre_blockers specifies the module names of pre blockers
 	// to call in the order in which they should be called. If this is left empty
 	// no pre blocker will be registered.
-	PreBlockers []string `protobuf:"bytes,10,rep,name=pre_blockers,json=preBlockers,proto3" json:"pre_blockers,omitempty"`
+	PreBlockers []string `protobuf:"bytes,10,rep,name=pre_blockers,json=preBlockers,proto3" json:"pre_blockers,omitempty"` // TODO investigate future of this given the renaming to upgrade blocker to upgrade only
 }
 
 func (x *Module) Reset() {
